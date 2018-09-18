@@ -12,6 +12,7 @@ app.config["MONGO_DBNAME"] = 'task_manager'
 app.config["MONGO_URI"] = 'mongodb://admin:admin01@ds161112.mlab.com:61112/task_manager'
 mongo = PyMongo(app)
 
+
 @app.route('/')
 @app.route('/get_tasks')
 def get_tasks():
